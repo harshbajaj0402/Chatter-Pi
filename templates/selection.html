@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<!--
+	Projection by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" />
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					
+					<nav id="nav">
+						<a href="index.html">Home</a>
+						<a href="generic.html">Generic</a>
+						<a href="elements.html">Elements</a>
+					</nav>
+					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+				</div>
+			</header>
+
+		
+		<!-- Three -->
+			<section id="three" class="wrapper align-center">
+				<div class="inner">
+					<div class="flex flex-2">
+						<article>
+							
+							<header>
+								<h3>Text<br /> Send text to your client</h3>
+							</header>
+							<p></p>
+							<footer>
+								<form method='POST' action='text'>
+								<input type="text" name="text1" value={{request.form.text1}}>
+								<input class="button" type='submit'>
+								</form>
+							</footer>
+						</article>
+						<article>
+							
+							<header>
+								<h3>Audio<br /> Recieve audio message from client</h3>
+							</header>
+							<p></p>
+							<footer>
+								<a href="audio" class="button">Get Audio Message</a>
+							</footer>
+						</article>
+                        <article style="margin-left:25%">
+							
+							<header>
+								<h3>Exit<br /> Disconnect with client</h3>
+							</header>
+							<p></p>
+							<footer>
+								<a href="close" class="button">Exit</a>
+							</footer>
+						</article>
+					</div>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+
+					<div class="copyright">
+						&copy; Untitled. Design: <a href="https://templated.co">TEMPLATED</a>. Images: <a href="https://unsplash.com">Unsplash</a>.
+					</div>
+
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='js/skel.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='js/util.js') }}"></script>
+			<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+	</body>
+</html>
